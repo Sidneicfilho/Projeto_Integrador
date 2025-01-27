@@ -1,0 +1,235 @@
+{{>partials/header}}
+
+<div class="form">
+        <form action="#">
+            <h4>ALTERAÇÕES E LESÕES DOS PÉS</h4>
+            <div class="row justify-content-center">
+                <p>Tipo de pisada</p>
+                <div class="col-md-2">
+                    <img src="images/pe_cavo.png" alt="Cavo">
+                    <input type="radio" name="tipo_pisada" value="1'" />
+
+                </div>
+
+                <div class="col-md-2">
+                    <img src="images/pe_chato.png" alt="Chato">
+                    <input type="radio" name="tipo_pisada" value="3" />
+
+                </div>
+
+                <div class="col-md-2">
+                    <img src="images/pe_normal.png" alt="Normal">
+                    <input type="radio" name="tipo_pisada" value="2" />
+
+                </div>
+                <hr>
+                <div class="condicoes_pe ">
+                    <!-- Flexível -->
+                    <div class="col">
+                        <div class="card p-3">
+                            <div class="card-title">Flexível</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="flexivel" value="2">
+                                <label class="form-check-label" for="flexivelD">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="flexivel" value="1">
+                                <label class="form-check-label" for="flexivelE">E</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rígido -->
+                    <div class="col">
+                        <div class="card p-3">
+                            <div class="card-title">Rígido</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="rigido" value="2">
+                                <label class="form-check-label" for="rigidoD">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="rigido" value="1">
+                                <label class="form-check-label" for="rigidoE">E</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Espalmado -->
+                    <div class="col">
+                        <div class="card p-3">
+                            <div class="card-title">Espalmado</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="rigido" value="2">
+                                <label class="form-check-label" for="espalmadoD">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="rigido" value="1">
+                                <label class="form-check-label" for="espalmadoE">E</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Martelo -->
+                    <div class="col">
+                        <div class="card p-3">
+                            <div class="card-title">Martelo</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="martelo" value="2">
+                                <label class="form-check-label" for="marteloD">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="martelo" value="1">
+                                <label class="form-check-label" for="marteloE">E</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Queda de Metatarso -->
+                    <div class="col">
+                        <div class="card p-3">
+                            <div class="card-title">Queda de Metatarso</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="queda_metatarso" value="2">
+                                <label class="form-check-label" for="quedaD">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="queda_metatarso" value="1">
+                                <label class="form-check-label" for="quedaE">E</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="container  justify-content-center">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>Tipo de Marcha</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="1" name="tipo_marcha">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Normal
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="2" name="tipo_marcha">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Patológica
+                                </label>
+                            </div>
+
+                            <label for="inputText">Qual?</label>
+                            <input type="text" id="inputText" name="inputText">
+                        </div>
+
+
+                        <div class="col-md-3 ">
+                            <p>Joelho</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="1" name="tipo_joelho">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Normal
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="2" name="tipo_joelho">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Valgo
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="3" name="tipo_joelho">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Varo
+                                </label>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-3 ">
+                            <p>Articulação</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="1" name="articulacao">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Retropé
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="2" name="articulacao">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Chopart
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="3" name="articulacao">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Mediopé
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="4" name="articulacao">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Lisfranc
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="5" name="articulacao">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Antepé
+                                </label>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-3 ">
+                            <p>Sensibilidade a dor</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="1" id="sensibilidade_dor">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Diminuída
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="2" id="sensibilidade_dor">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Normal
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="3" id="sensibilidade_dor">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Aumentada
+                                </label>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </form>
+    </div>
+
+<form action="/submit" method="POST">
+  <button type="submit">Enviar</button>
+</form>
+
+{{>partials/footer}}

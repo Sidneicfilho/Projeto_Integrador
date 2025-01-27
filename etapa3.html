@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 3: Resumo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Etapa 3: Resumo</h2>
+        <div id="resumo"></div>
+        <button onclick="submitForm()">Enviar</button>
+        <!-- Botão Voltar -->
+        <button onclick="previousStep()">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+// Captura as seleções do formulário
+      const tipoMarcha = document.querySelector('input[name="tipo_marcha"]:checked')?.value || null;
+      const marchaDetalhe = document.getElementById('marcha-detalhe').value || null;
+      const joelho = document.querySelector('input[name="joelho"]:checked')?.value || null;
+      const articulacao = document.querySelector('input[name="articulacao"]:checked')?.value || null;
+      const sensibilidade = document.querySelector('input[name="sensibilidade"]:checked')?.value || null;

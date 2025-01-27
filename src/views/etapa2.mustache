@@ -1,0 +1,183 @@
+{{>partials/header}}
+
+<form action="/etapa2" method="POST">
+  <div class="form">
+
+        <form action="#">
+            <h4>Dados Gerais</h4>
+
+            <div class="input-box">
+                <label for="question" >Queixa principal:</label>
+                <input type="text" id="queixa_principal">
+            </div>
+
+
+            <div class="input-box">
+                <div class="gender-input">
+                    <label for="gender-ortopedica" >Costuma ir ao podólogo?</label>
+                    <input type="radio" name="frequencia_podologo" value="sim">
+                    <label for="gender-ortopedica">Sim</label>
+                
+                    <input type="radio" name="frequencia_podologo" value="nao">
+                    <label for="gender-descanso">Não</label>
+                </div>
+                
+                
+
+                <div class="gender-input">
+                    <label for="frequence">Com qual frequência?</label>
+                    <input type="text" id="frequencia_visita_podologo">
+                </div>
+                <div class="gender-input">
+                    <label for="gender-ortopedica">Faz uso de medicamentos?</label>
+                    <input type="radio" name="uso_medicamento" value="sim">
+                    <label for="gender-ortopedica">Sim</label>
+                
+                    <input type="radio" name="uso_medicamento" value="nao">
+                    <label for="gender-descanso">não</label>
+
+                    <div class="text-input">
+                        <label for="extra-info">Quais?</label>
+                        <input type="text" id="tipo_medicamento" placeholder="">
+                    </div>
+                </div>
+                
+                
+
+                <div class="gender-input">
+                    <label for="gender-ortopedica">Alérgico?</label>
+
+                    <input type="radio" name="possui_alergia" value="sim">
+                    <label for="gender-ortopedica">Sim</label>
+                
+                    <input type="radio" name="possui_alergia" value="nao">
+                    <label for="gender-descanso">Não</label>
+                </div>
+                
+                
+
+                <div class="gender-input">
+                    <label for="">Quais substâncias?</label>
+                    <input type="text" id="alergia_substancia">
+                </div>
+
+                <div class="gender-input">
+                    <label for="job-position">Posição de trabalho:</label>
+                    <label for="standing">Em pé</label>
+                    <input type="checkbox" name="posicao_trabalho" id="" value="1">
+                    <label for="sitting">Sentado</label>
+                    <input type="checkbox" name="posicao_trabalho" id="" value="2">
+                    <label for="walking">Andando</label>
+                    <input type="checkbox" name="posicao_trabalho" id="" value="3">
+                    <label for="duration">Duração</label>
+                    <input type="text" id="duracao">
+                    <label for="hs">hs</label>
+                    <input type="text" id="hs">
+                </div>
+
+                {{!
+                    resolver no banco de dados
+                }}
+                
+                <div class="gender-input">
+                    <label for="">Passa a maior parte do tempo:</label>
+
+                    <input type="checkbox">
+                    <label for="standing">Em pé</label>
+                    <input type="checkbox" name="standing">
+                    <label for="sitting">Sentado</label>
+                    <input type="checkbox" name="walking" id="">
+                    <label for="">Caminhando</label>
+                </div>
+
+                <div class="gander-input">
+                    <label for="">N° do calçado</label>
+                    <input type="text" id="numero_calcado" placeholder="32/33">
+                </div>
+
+                <div class="gander-input">
+                    <label for="">Tipo de calçado de uso diário</label>
+                    <input type="text" id="tipo_calcado" placeholder="Chinelo, Tênis">
+                </div>
+                
+                
+                <div class="gender-input">
+                    <label for="gender-ortopedica">Qual?</label>
+
+                    <input type="radio" name="tipo_palmilha" value="1">
+                    <label for="gender-ortopedica">Ortopédica</label>
+                
+                    <input type="radio" name="tipo_palmilha" value="2">
+                    <label for="gender-descanso">Descanso</label>
+                </div>
+                
+                <div class="gander-input">
+                    <label for="">É fumante?</label>
+
+                    <input type="radio" name="fumante" value="sim">
+                    <label for="yes">Sim</label>
+
+                    <input type="radio" name="fumante" value="nao">
+                    <label for="no">Não</label>
+                </div>
+
+                <div class="gander-input">
+                    <label for="">Ciclo de menstruação regular?</label>
+
+                    <input type="radio" name="ciclo_menstrual" value="sim">
+                    <label for="yes">Sim</label>
+
+                    <input type="radio" name="ciclo_menstrual" value="nao">
+                    <label for="no">Não</label>
+                </div>
+
+                <div class="gander-input">
+                    <label for="">Está gestante?</label>
+
+                    <input type="radio" name="gestante" value="sim">
+                    <label for="yes">Sim</label>
+
+                    <input type="radio" name="gestante" value="nao">
+                    <label for="no">Não</label>
+                </div>
+
+                <div class="gender-input">
+                    <label for="">Está amamentando?</label>
+                    <input type="radio" name="amamentando" value="sim">
+                    <label for="yes">Sim</label>
+
+                    <input type="radio" name="amamentando" value="nao">
+                    <label for="no">Não</label>
+                </div>
+
+                {{! verificar e arrumar no banco }}
+                <div class="gender-input">
+                    <label for="DUM">DUM</label>
+                    <input type="date" name="" id="">
+                </div>
+
+                <div class="gander-input">
+                    <label for="">Pratica atividade física?</label>
+
+                    <input type="radio" name="atividade_fisica" value="sim">
+                    <label for="yes">Sim</label>
+
+                    <input type="radio" name="atividade_fisica" value="nao">
+                    <label for="no">Não</label>
+
+                    <label for="frequence">Frequência?</label>
+                    <input type="text" id="frequencia_atividade_fisica" placeholder="Três vezes na semana">
+
+                    <label for="frequence">Qual esporte e tipo de calçado?</label>
+                    <input type="text" name="tipo_esporte" id="" placeholder="Esporte">
+                    <input type="text" name="calcado_esporte" id="" placeholder="Calçado">
+
+                </div>
+            </div>
+        </form>
+    </div>
+  <button type="button" onclick="nextStep()">Próximo</button>
+  <button type="button" onclick="previousStep()">Voltar</button>
+</form>
+
+{{>partials/footer}}
