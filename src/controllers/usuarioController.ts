@@ -398,21 +398,6 @@ export const etapa7Post = (req: Request, res: Response) => {
     res.redirect('/etapa8');
 };
  
-export const etapa8 = (req: Request, res: Response) => {
-    res.render('etapa8', { resumo: formData });
-};
- 
-export const etapa8Post = (req: Request, res: Response) => {
-    const { endereco, cidade } = req.body;
-    formData.endereco = endereco;
-    formData.cidade = cidade;
-    res.redirect('/etapa9');
-};
- 
-export const etapa9 = (req: Request, res: Response) => {
-    res.render('etapa9', { resumo: formData });
-};
- 
  
 export const submit = async (req: Request, res: Response) => {
     try {

@@ -27,10 +27,8 @@ router.post('/etapa6',usuarioController.etapa6Post)
  
 router.get('/etapa7',usuarioController.etapa7)
 router.post('/etapa7',usuarioController.etapa7Post)
- 
-router.get('/etapa8',usuarioController.etapa8)
-router.post('/etapa8',usuarioController.etapa8Post)
- 
+
+
 router.post('/submit',usuarioController.submit)
  
  
